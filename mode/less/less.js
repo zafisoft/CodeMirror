@@ -249,7 +249,10 @@ CodeMirror.defineMode("less", function(config) {
       return state.baseIndent + n * indentUnit;
     },
 
-    electricChars: "}"
+    electricChars: "}",
+    blockCommentStart: "/*",
+    blockCommentEnd: "*/",
+    lineComment: "//"
   };
 });
 
